@@ -72,18 +72,24 @@
         li {
             margin-bottom: 15px; /* Add more margin below list items */
             color: #555555;
+            font-size: 0.9em; /* Larger font size for section headings */
             line-height: 1.5; /* Improved line height for better readability */
         }
 
         .sub-list {
-            margin-top: 5px;
-            margin-bottom: 15px;
-            font-size: 0.9em; /* Reduced font size for descriptions */
+            margin-top: 0.5px; /* Reduced margin above sub-lists */
+            margin-bottom: 0.5px; /* Further reduced margin below sub-lists */
+            line-height: 0; /* Adjusted line height for sub-list descriptions */
+            font-size: 0.7em; /* Reduced font size for descriptions */
         }
 
         .date {
-            font-size: 0.9em; /* Reduced font size for dates */
+            font-size: 0.7em; /* Reduced font size for dates */
             font-style: italic; /* Italicize dates */
+        }
+
+        .sub-list li {
+         margin-bottom: 5px; /* Adjusted margin between each sub-list item */
         }
     </style>
 </head>
@@ -100,25 +106,6 @@
 <div id="right-column">
     <h2>Work Experience</h2>
     <ul>
-        <li>
-            <span style="color: #222222; font-weight: bold;">CySAT Software Development</span> <span class="date"><i>March – July 2023</i></span>
-            <ul class="sub-list">
-                <li>Collaborated on the development of a Cube Satellite (CySat) for deployment on the International Space Station.</li>
-                <li>Coordinated with fellow interns for in-person work, ensuring smooth progress on the project.</li>
-                <li>Utilized GitHub for collaborative coding and debugging.</li>
-                <li>Developed Python code to decode unstructured data (Hex bits), making it readable for analysis.</li>
-            </ul>
-        </li>
-
-        <li>
-            <span style="color: #222222; font-weight: bold;">LAS Department IT Support</span> <span class="date"><i>May 2022 – Present</i></span>
-            <ul class="sub-list">
-                <li>Acknowledged for exceptional customer service skills, consistently receiving compliments from users.</li>
-                <li>Demonstrated strong self-discipline and dedication, consistently surpassing performance benchmarks by closing a higher number of support tickets compared to other student workers.</li>
-                <li>Exhibited proactive problem-solving abilities by reorganizing equipment and implementing a labeling system, reflecting a commitment to optimizing processes.</li>
-            </ul>
-        </li>
-
         <li>
             <span style="color: #222222; font-weight: bold;">CySAT Software Development</span> <span class="date"><i>March – July 2023</i></span>
             <ul class="sub-list">
@@ -179,7 +166,7 @@
             <span style="color: #222222; font-weight: bold;">Kaggle Community Prediction Competition</span> <span class="date"><i>March – April 2022</i></span>
             <ul class="sub-list">
                 <li>Worked with two teammates to predict the bankruptcy of companies to 96.152% accuracy.</li>
-                <li>Used machine learning and python.</li>
+                <li>Used machine learning and python. Did dimension reduction.</li>
             </ul>
         </li>
 
