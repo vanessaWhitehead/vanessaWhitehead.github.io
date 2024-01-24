@@ -10,24 +10,27 @@
             margin: 0;
             padding: 0;
             display: flex;
-            background-color: #ffffff; /* White background for the entire page */
+            background-color: #ffffff; /* White background */
         }
 
-        #left-column, #right-column {
-            width: 50%;
+        #left-column {
+            width: 40%;
             box-sizing: border-box;
+            padding: 30px;
+            position: fixed;
+            height: 100%; /* Set left column to full height */
+        }
+
+        #right-column {
+            margin-left: 40%;
             padding: 30px;
             overflow-y: auto;
         }
 
-        #left-column {
-            margin-right: 20px; /* More margin on the left side */
-        }
-
         h1 {
-            color: #005189; /* Cyan Blue color for your name */
-            font-size: 2em; /* Larger font size for your name */
-            margin-bottom: 10px; /* Add margin below your name */
+            color: #005189; /* color for name */
+            font-size: 2em; /* Larger font size for name */
+            margin-bottom: 10px; /* Add margin below name */
         }
 
         img {
@@ -38,7 +41,7 @@
         }
 
         p {
-            color: #555555; /* Dark gray color for additional information */
+            color: #222222; /* Dark gray color for additional information */
             margin: 10px 0; /* Add margin to paragraphs */
         }
 
@@ -54,11 +57,11 @@
         }
 
         h2 {
-            color: #111111; /* Dark color for section headings */
-            border-bottom: 2px solid #005189; /* Cyan Blue underline for section headings */
-            padding-bottom: 5px; /* Add padding below section headings */
-            margin-bottom: 20px; /* Add margin below section headings */
+            color: #222222; /* Dark color for section headings */
+            padding-bottom: 2px; /* Add padding below section headings */
+            margin-bottom: 10px; /* Add margin below section headings */
             font-size: 1.5em; /* Larger font size for section headings */
+            font-weight: bold; /* Bold font for section headings */
         }
 
         ul {
@@ -68,7 +71,13 @@
 
         li {
             margin-bottom: 15px; /* Add more margin below list items */
-            line-height: 1.5; /* Improved line height for better readability */
+            color: #555555;
+            line-height: 1; /* Improved line height for better readability */
+        }
+
+        .sub-list {
+            margin-top: 5px;
+            margin-bottom: 15px;
         }
     </style>
 </head>
@@ -85,15 +94,46 @@
 <div id="right-column">
     <h2>Work Experience</h2>
     <ul>
-        <li>Job Title 1 - Company 1</li>
-        <li>Job Title 2 - Company 2</li>
+        <li>
+            <span style="color: #222222; font-weight: bold;">CySAT Software Development</span> March – July 2023
+            <ul class="sub-list">
+                <li>Collaborated on the development of a Cube Satellite (CySat) for deployment on the International Space Station.</li>
+                <li>Coordinated with fellow interns for in-person work, ensuring smooth progress on the project.</li>
+                <li>Utilized GitHub for collaborative coding and debugging.</li>
+                <li>Developed Python code to decode unstructured data (Hex bits), making it readable for analysis.</li>
+            </ul>
+        </li>
+
+        <li>
+            <span style="color: #222222; font-weight: bold;">LAS Department IT Support</span> May 2022 – Present
+            <ul class="sub-list">
+                <li>Acknowledged for exceptional customer service skills, consistently receiving compliments from users.</li>
+                <li>Demonstrated strong self-discipline and dedication, consistently surpassing performance benchmarks by closing a higher number of support tickets compared to other student workers.</li>
+                <li>Exhibited proactive problem-solving abilities by reorganizing equipment and implementing a labeling system, reflecting a commitment to optimizing processes.</li>
+            </ul>
+        </li>
+
         <!-- Add more work experience items as needed -->
     </ul>
 
     <h2>Projects</h2>
     <ul>
-        <li>Project 1 - Description 1</li>
-        <li>Project 2 - Description 2</li>
+        <li>
+            <span style="color: #222222; font-weight: bold;">Kaggle Community Prediction Competition</span> March – April 2022
+            <ul class="sub-list">
+                <li>Worked with two teammates to predict the bankruptcy of companies to 96.152% accuracy.</li>
+                <li>Used machine learning and python.</li>
+            </ul>
+        </li>
+
+        <li>
+            <span style="color: #222222; font-weight: bold;">Monster Maze </span> February – April 2021
+            <ul class="sub-list">
+                <li>Started without knowledge of C# and GitHub and collaborated with a small team to make a playable game using C#, GitHub, and Unity.</li>
+                <li>Held weekly meetings to set goals, collaborate, and maintain consistent work ethic.</li>
+            </ul>
+        </li>
+
         <!-- Add more project items as needed -->
     </ul>
 </div>
