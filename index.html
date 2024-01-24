@@ -6,7 +6,7 @@
     <title>Vanessa Whitehead - Personal Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Calibri, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -16,7 +16,7 @@
         #left-column {
             width: 40%;
             box-sizing: border-box;
-            padding: 30px;
+            padding: 50px;
             position: fixed;
             height: 100%; /* Set left column to full height */
         }
@@ -72,12 +72,18 @@
         li {
             margin-bottom: 15px; /* Add more margin below list items */
             color: #555555;
-            line-height: 1; /* Improved line height for better readability */
+            line-height: 1.5; /* Improved line height for better readability */
         }
 
         .sub-list {
             margin-top: 5px;
             margin-bottom: 15px;
+            font-size: 0.9em; /* Reduced font size for descriptions */
+        }
+
+        .date {
+            font-size: 0.9em; /* Reduced font size for dates */
+            font-style: italic; /* Italicize dates */
         }
     </style>
 </head>
@@ -95,7 +101,7 @@
     <h2>Work Experience</h2>
     <ul>
         <li>
-            <span style="color: #222222; font-weight: bold;">CySAT Software Development</span> March – July 2023
+            <span style="color: #222222; font-weight: bold;">CySAT Software Development</span> <span class="date"><i>March – July 2023</i></span>
             <ul class="sub-list">
                 <li>Collaborated on the development of a Cube Satellite (CySat) for deployment on the International Space Station.</li>
                 <li>Coordinated with fellow interns for in-person work, ensuring smooth progress on the project.</li>
@@ -105,7 +111,7 @@
         </li>
 
         <li>
-            <span style="color: #222222; font-weight: bold;">LAS Department IT Support</span> May 2022 – Present
+            <span style="color: #222222; font-weight: bold;">LAS Department IT Support</span> <span class="date"><i>May 2022 – Present</i></span>
             <ul class="sub-list">
                 <li>Acknowledged for exceptional customer service skills, consistently receiving compliments from users.</li>
                 <li>Demonstrated strong self-discipline and dedication, consistently surpassing performance benchmarks by closing a higher number of support tickets compared to other student workers.</li>
@@ -113,13 +119,64 @@
             </ul>
         </li>
 
+        <li>
+            <span style="color: #222222; font-weight: bold;">CySAT Software Development</span> <span class="date"><i>March – July 2023</i></span>
+            <ul class="sub-list">
+                <li>Collaborated on the development of a Cube Satellite (CySat) for deployment on the International Space Station.</li>
+                <li>Coordinated with fellow interns for in-person work, ensuring smooth progress on the project.</li>
+                <li>Utilized GitHub for collaborative coding and debugging.</li>
+                <li>Developed Python code to decode unstructured data (Hex bits), making it readable for analysis.</li>
+            </ul>
+        </li>
+
+        <li>
+            <span style="color: #222222; font-weight: bold;">LAS Department IT Support</span> <span class="date"><i>May 2022 – Present</i></span>
+            <ul class="sub-list">
+                <li>Acknowledged for exceptional customer service skills, consistently receiving compliments from users.</li>
+                <li>Demonstrated strong self-discipline and dedication, consistently surpassing performance benchmarks by closing a higher number of support tickets compared to other student workers.</li>
+                <li>Exhibited proactive problem-solving abilities by reorganizing equipment and implementing a labeling system, reflecting a commitment to optimizing processes.</li>
+            </ul>
+        </li>
+
+        <li>
+            <span style="color: #222222; font-weight: bold;">Iowa State Dining</span> <span class="date"><i>March – December 2021</i></span>
+            <ul class="sub-list">
+                <li>Promoted to supervisor after a semester for being a fast learner and having good people skills.</li>
+                <li>Thrived in a high-paced environment, training co-workers, effectively delegating tasks, and filling in where needed.</li>
+                <li>Introduced process improvements that led to consistently closing ahead of schedule, increasing overall efficiency.</li>
+            </ul>
+        </li>
+
         <!-- Add more work experience items as needed -->
+        <li>
+            <span style="color: #222222; font-weight: bold;">Iowa State Physics Tutoring</span> <span class="date"><i>Fall Semester 2021</i></span>
+            <ul class="sub-list">
+                <li>Facilitated effective communication and maintained schedules for each tutoring group.</li>
+                <li>Established a supportive rapport with students, tailoring assistance to their unique needs.</li>
+                <li>Simplified complex physics topics and processes through clear communication, resulting in all tutees passing the class.</li>
+            </ul>
+        </li>
+
+        <li>
+            <span style="color: #222222; font-weight: bold;">Bountiful Hope Farms Summer Intern</span> <span class="date"><i>Summer 2017, 2018, 2020</i></span>
+            <ul class="sub-list">
+                <li>Demonstrated excellent work ethic working long hours in the heat. Worked with other three Interns to maintain and manage the farm through weeding, harvesting, and transporting produce to food shelters.</li>
+            </ul>
+        </li>
+
+        <li>
+            <span style="color: #222222; font-weight: bold;">Teaching Assistant at Concordia International School Hanoi</span> <span class="date"><i>Aug 2019 – June 2020</i></span>
+            <ul class="sub-list">
+                <li>Followed a lesson plan and taught high school freshman in Spanish Level 1 for half a period every other day.</li>
+                <li>Managed and escorted a group of 4th graders during summer extension classes. Explained concepts and directions.</li>
+            </ul>
+        </li>
     </ul>
 
     <h2>Projects</h2>
     <ul>
         <li>
-            <span style="color: #222222; font-weight: bold;">Kaggle Community Prediction Competition</span> March – April 2022
+            <span style="color: #222222; font-weight: bold;">Kaggle Community Prediction Competition</span> <span class="date"><i>March – April 2022</i></span>
             <ul class="sub-list">
                 <li>Worked with two teammates to predict the bankruptcy of companies to 96.152% accuracy.</li>
                 <li>Used machine learning and python.</li>
@@ -127,14 +184,27 @@
         </li>
 
         <li>
-            <span style="color: #222222; font-weight: bold;">Monster Maze </span> February – April 2021
+            <span style="color: #222222; font-weight: bold;">Monster Maze </span> <span class="date"><i>February – April 2021</i></span>
             <ul class="sub-list">
                 <li>Started without knowledge of C# and GitHub and collaborated with a small team to make a playable game using C#, GitHub, and Unity.</li>
                 <li>Held weekly meetings to set goals, collaborate, and maintain consistent work ethic.</li>
             </ul>
         </li>
 
-        <!-- Add more project items as needed -->
+        <li>
+            <span style="color: #222222; font-weight: bold;">International Conference on Big Data and Education</span> <span class="date"><i>London, UK March 2019</i></span>
+            <ul class="sub-list">
+                <li>Awarded a Certificate of Excellence for presenting findings on Pneumonia and Sepsis data.</li>
+                <li>Published in the peer-reviewed ACM Digital Library.</li>
+            </ul>
+        </li>
+
+        <li>
+            <span style="color: #222222; font-weight: bold;">Particle Physics Master Class</span> <span class="date"><i>Shanghai, China January – March 2019</i></span>
+            <ul class="sub-list">
+                <li>Analyzed particle collisions using CMS and presented findings to CERN scientists.</li>
+            </ul>
+        </li>
     </ul>
 </div>
 
