@@ -1,28 +1,101 @@
 <!DOCTYPE html>
-<html>
-<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanessa Whitehead - Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #ffffff; /* White background for the entire page */
+        }
 
+        #left-column, #right-column {
+            width: 50%;
+            box-sizing: border-box;
+            padding: 30px;
+            overflow-y: auto;
+        }
+
+        #left-column {
+            margin-right: 20px; /* More margin on the left side */
+        }
+
+        h1 {
+            color: #005189; /* Cyan Blue color for your name */
+            font-size: 2em; /* Larger font size for your name */
+            margin-bottom: 10px; /* Add margin below your name */
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 50%;
+            margin: 20px 0; /* Add margin above and below the image */
+        }
+
+        p {
+            color: #555555; /* Dark gray color for additional information */
+            margin: 10px 0; /* Add margin to paragraphs */
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            transition: color 0.3s ease; /* Smooth color transition on hover */
+        }
+
+        a:hover {
+            color: #004080; /* Darker blue on hover */
+        }
+
+        h2 {
+            color: #333333; /* Dark color for section headings */
+            border-bottom: 2px solid #003A6F; /* Cyan Blue underline for section headings */
+            padding-bottom: 5px; /* Add padding below section headings */
+            margin-bottom: 20px; /* Add margin below section headings */
+            font-size: 1.5em; /* Larger font size for section headings */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px; /* Add more margin below list items */
+            line-height: 1.5; /* Improved line height for better readability */
+        }
+    </style>
+</head>
+<body>
+
+<div id="left-column">
+    <h1>Vanessa Whitehead</h1>
+    <img src="[insert picture URL]" alt="Vanessa's Picture">
+    <p>Email: <a href="mailto:vanessaw@iastate.edu" style="color: #005189;">vanessaw@iastate.edu</a></p>
+    <p><a href="https://github.com/vanessaWhitehead" target="_blank" style="color: #005189;">GitHub</a></p>
+    <p><a href="https://www.linkedin.com/in/vanessa-whitehead-4b89431a1/" target="_blank" style="color: #005189;">LinkedIn</a></p>
+</div>
+
+<div id="right-column">
+    <h2>Work Experience</h2>
+    <ul>
+        <li>Job Title 1 - Company 1</li>
+        <li>Job Title 2 - Company 2</li>
+        <!-- Add more work experience items as needed -->
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+        <li>Project 1 - Description 1</li>
+        <li>Project 2 - Description 2</li>
+        <!-- Add more project items as needed -->
+    </ul>
+</div>
+
+</body>
 </html>
